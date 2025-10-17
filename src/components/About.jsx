@@ -88,7 +88,7 @@ const About = () => {
               <div className="about-stats">
                 <div className="stat">
                   <h3>6</h3>
-                  <p>Projets Prévus 2025</p>
+                  <p>Projets En cours/Réalisés en 2025</p>
                 </div>
                 <div className="stat">
                   <h3>2</h3>
