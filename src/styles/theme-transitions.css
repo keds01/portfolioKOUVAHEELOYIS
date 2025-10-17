@@ -1,0 +1,94 @@
+/* Transitions globales pour le changement de thème */
+* {
+  transition: 
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Éléments qui ne doivent pas avoir de transition */
+.no-transition,
+.no-transition * {
+  transition: none !important;
+}
+
+/* Transitions spécifiques pour les composants */
+.hero,
+.about,
+.services,
+.projects,
+.contact,
+.footer {
+  transition: background-color 0.3s ease;
+}
+
+.navigation {
+  transition: 
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Transitions pour les cartes et éléments interactifs */
+.service-card,
+.project-card,
+.contact-form-container,
+.footer-content {
+  transition: 
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Transitions pour les boutons */
+.btn,
+.submit-btn,
+.filter-btn,
+.social-link {
+  transition: 
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* Transitions pour les icônes */
+.skill-icon,
+.service-icon,
+.contact-icon {
+  transition: 
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Transitions pour les textes */
+h1, h2, h3, h4, h5, h6,
+p, span, a, li {
+  transition: color 0.3s ease;
+}
+
+/* Transitions pour les inputs */
+.form-input,
+.form-textarea {
+  transition: 
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Animation de changement de thème */
+@keyframes themeChange {
+  0% { opacity: 1; }
+  50% { opacity: 0.8; }
+  100% { opacity: 1; }
+}
+
+.theme-changing {
+  animation: themeChange 0.3s ease;
+}
+
