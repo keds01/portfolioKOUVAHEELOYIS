@@ -1,12 +1,12 @@
+/* Import des transitions de thème */
+@import './styles/theme-transitions.css';
+
 /* Reset et base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* Import des transitions de thème */
-@import './styles/theme-transitions.css';
 
 :root {
   /* Typography */
