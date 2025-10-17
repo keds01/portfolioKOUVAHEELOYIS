@@ -109,7 +109,7 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   margin-bottom: 4rem;
 }
@@ -322,15 +322,82 @@
   font-weight: 500;
 }
 
-/* Responsive */
+/* Mobile Projects - Complete Redesign */
 @media (max-width: 768px) {
+  .projects {
+    padding: 60px 0;
+  }
+
+  .projects-header {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+    margin-bottom: 1rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.1rem;
+    max-width: 100%;
+  }
+
+  .projects-filters {
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .filter-btn {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    transition: all 0.3s ease;
+  }
+
+  .filter-btn:hover {
+    background: var(--primary-black);
+    color: var(--primary-white);
+    border-color: var(--primary-black);
+    transform: translateY(-2px);
+  }
+
+  .filter-btn.active {
+    background: var(--primary-black);
+    color: var(--primary-white);
+    border-color: var(--primary-black);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
   .projects-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   .project-card {
-    margin: 0 1rem;
+    margin: 0;
+    border-radius: 16px;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 16px var(--shadow-color);
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+
+  .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px var(--shadow-hover);
+    border-color: var(--primary-black);
+  }
+
+  .project-image {
+    height: 180px;
+    background: linear-gradient(135deg, var(--bg-secondary), var(--gray-200));
   }
 
   .project-content {
@@ -339,31 +406,117 @@
 
   .project-header {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-category span {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+    align-self: flex-start;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+  }
+
+  .project-technologies {
+    gap: 0.4rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .tech-tag {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 12px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
   }
 
   .project-meta {
     grid-template-columns: 1fr;
-    gap: 0.5rem;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    margin-bottom: 1.25rem;
+    font-size: 0.85rem;
   }
 
-  .projects-filters {
-    gap: 0.5rem;
+  .project-features {
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
   }
 
-  .filter-btn {
-    padding: 10px 20px;
-    font-size: 0.9rem;
+  .project-features h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .project-features li {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-bottom: 0.4rem;
+  }
+
+  .projects-cta {
+    padding: 2.5rem 1.5rem;
+    border-radius: 16px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+  }
+
+  .projects-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 1.25rem;
   }
 }
 
 @media (max-width: 480px) {
-  .project-card {
-    margin: 0;
+  .projects {
+    padding: 50px 0;
+  }
+
+  .projects-header {
+    margin-bottom: 2rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.6rem, 8vw, 2.2rem);
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .projects-filters {
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .filter-btn {
+    padding: 10px 16px;
+    font-size: 0.85rem;
+  }
+
+  .projects-grid {
+    gap: 1.25rem;
+  }
+
+  .project-image {
+    height: 160px;
   }
 
   .project-content {
-    padding: 1rem;
+    padding: 1.25rem;
   }
 
   .project-title {
@@ -374,7 +527,24 @@
     font-size: 0.9rem;
   }
 
+  .project-meta {
+    padding: 0.875rem;
+    font-size: 0.8rem;
+  }
+
+  .project-features h4 {
+    font-size: 0.9rem;
+  }
+
+  .project-features li {
+    font-size: 0.8rem;
+  }
+
   .projects-cta {
-    padding: 2rem;
+    padding: 2rem 1.25rem;
+  }
+
+  .projects-cta p {
+    font-size: 1rem;
   }
 }

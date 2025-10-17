@@ -275,57 +275,255 @@
   margin: 0;
 }
 
-/* Responsive */
+/* Mobile About - Complete Redesign */
 @media (max-width: 768px) {
+  .about {
+    padding: 60px 0;
+  }
+
+  .about-header {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+    margin-bottom: 1rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.1rem;
+    max-width: 100%;
+  }
+
   .about-grid {
     grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .about-text {
+    order: 2;
+  }
+
+  .about-text p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+    text-align: justify;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .stat {
+    padding: 1.25rem;
+    text-align: center;
+    border-radius: 12px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+  }
+
+  .stat h3 {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .stat p {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .about-skills {
+    order: 1;
+    margin-bottom: 2rem;
+  }
+
+  .about-skills h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .skills-grid {
+    gap: 1rem;
+  }
+
+  .skill-item {
+    padding: 1rem;
+    border-radius: 12px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+  }
+
+  .skill-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow-color);
+  }
+
+  .skill-icon {
+    font-size: 1.3rem;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+  }
+
+  .skill-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+  }
+
+  .skill-bar {
+    height: 8px;
+    border-radius: 4px;
+    background: var(--gray-200);
+  }
+
+  .skill-progress {
+    border-radius: 4px;
+  }
+
+  .skill-level {
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  .about-timeline {
+    margin-top: 3rem;
+  }
+
+  .about-timeline h3 {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+
+  .timeline {
+    max-width: 100%;
+  }
+
+  .timeline::before {
+    left: 24px;
+    width: 3px;
+    background: var(--primary-black);
+  }
+
+  .timeline-item {
+    flex-direction: row !important;
+    padding-left: 3.5rem;
+    margin-bottom: 2rem;
+    gap: 0;
+  }
+
+  .timeline-marker {
+    left: 24px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid var(--primary-white);
+    box-shadow: 0 0 0 3px var(--primary-black);
+  }
+
+  .timeline-content {
+    background: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 8px var(--shadow-color);
+  }
+
+  .timeline-year {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.6rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .timeline-content h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .timeline-company {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .timeline-content p:last-child {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 50px 0;
+  }
+
+  .about-header {
+    margin-bottom: 2rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.6rem, 8vw, 2.2rem);
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .about-grid {
     gap: 2rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+    text-align: left;
   }
 
   .about-stats {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 0.75rem;
+  }
+
+  .stat {
+    padding: 1rem;
+  }
+
+  .stat h3 {
+    font-size: 1.8rem;
+  }
+
+  .skill-item {
+    padding: 0.875rem;
+  }
+
+  .skill-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+  }
+
+  .skill-name {
+    font-size: 0.9rem;
+  }
+
+  .timeline-item {
+    padding-left: 3rem;
+  }
+
+  .timeline-marker {
+    left: 20px;
+    width: 10px;
+    height: 10px;
   }
 
   .timeline::before {
     left: 20px;
   }
 
-  .timeline-item {
-    flex-direction: row !important;
-    padding-left: 3rem;
-  }
-
-  .timeline-marker {
-    left: 20px;
-    transform: translate(-50%, -50%);
-  }
-
   .timeline-content {
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-header {
-    margin-bottom: 2rem;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .about-text p {
-    font-size: 1rem;
-  }
-
-  .skill-item {
-    flex-direction: column;
-    text-align: center;
-    gap: 0.5rem;
-  }
-
-  .skill-info {
-    width: 100%;
+    padding: 1.25rem;
   }
 }

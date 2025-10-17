@@ -73,8 +73,39 @@
   padding: 0.5rem;
 }
 
-/* Mobile */
+/* Desktop - Ensure menu is visible */
+@media (min-width: 769px) {
+  .nav-menu {
+    display: flex !important;
+    position: static;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    backdrop-filter: none;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .nav-toggle {
+    display: none;
+  }
+}
+
+/* Mobile Navigation - Simple */
 @media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--primary-black);
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+
   .nav-menu {
     position: fixed;
     top: 70px;
@@ -97,7 +128,27 @@
     visibility: visible;
   }
 
-  .nav-toggle {
-    display: block;
+  .nav-link {
+    color: var(--primary-black);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+  }
+
+  .nav-link:hover {
+    color: var(--gray-600);
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-menu {
+    top: 60px;
+    padding: 1.5rem;
   }
 }

@@ -190,50 +190,144 @@
   font-size: 1.2rem;
 }
 
-/* Responsive */
+/* Mobile Design - Complete Redesign */
 @media (max-width: 768px) {
+  .hero {
+    min-height: 100vh;
+    padding: 100px 0 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-particles {
+    display: none;
+  }
+
   .hero-content {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 3rem;
     text-align: center;
+    padding: 0 1rem;
   }
 
-  .hero-photo {
-    flex-direction: row;
-    justify-content: center;
+  .hero-text {
+    order: 2;
+    max-width: 100%;
   }
 
-  .photo-container {
-    width: 400px;
-    height: 400px;
-  }
-
-  .hero-scroll {
-    bottom: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
   .hero-title {
-    font-size: clamp(2rem, 10vw, 3rem);
+    font-size: clamp(2.2rem, 8vw, 3.5rem);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+
+  .hero-subtitle h2 {
+    font-size: clamp(1.3rem, 5vw, 2rem);
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-subtitle p {
+    font-size: 1.1rem;
+  }
+
+  .hero-description {
+    margin-bottom: 2rem;
   }
 
   .typing-text {
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    line-height: 1.5;
+    min-height: auto;
+  }
+
+  .hero-cta {
+    margin-bottom: 2rem;
   }
 
   .hero-cta .btn {
     width: 100%;
-    padding: 15px 20px;
+    max-width: 280px;
+    padding: 16px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+
+  .hero-photo {
+    order: 1;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
   }
 
   .photo-container {
-    width: 350px;
-    height: 350px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-black);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  }
+
+  .hero-image {
+    border-radius: 50%;
+  }
+
+  .photo-overlay {
+    border-radius: 50%;
   }
 
   .photo-overlay span {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  .hero-scroll {
+    bottom: 2rem;
+  }
+
+  .scroll-btn {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 80px 0 30px;
+  }
+
+  .hero-content {
+    gap: 2rem;
+    padding: 0 0.5rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.8rem, 10vw, 2.8rem);
+  }
+
+  .hero-subtitle h2 {
+    font-size: clamp(1.1rem, 6vw, 1.6rem);
+  }
+
+  .hero-subtitle p {
     font-size: 1rem;
-    padding: 0.8rem;
+  }
+
+  .typing-text {
+    font-size: clamp(0.9rem, 4vw, 1.1rem);
+  }
+
+  .hero-cta .btn {
+    max-width: 100%;
+    padding: 14px 20px;
+    font-size: 0.95rem;
+  }
+
+  .photo-container {
+    width: 160px;
+    height: 160px;
+  }
+
+  .hero-scroll {
+    bottom: 1rem;
   }
 }
