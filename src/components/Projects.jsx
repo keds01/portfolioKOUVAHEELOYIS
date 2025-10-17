@@ -27,7 +27,7 @@ const Projects = () => {
       duration: "Prévu 2025 - 4 mois",
       client: "Chaîne de superettes régionale",
       features: ["Contrôle des stocks en temps réel", "Synchronisation des données multi-points", "Suivi des ventes centralisé", "Interface unifiée"],
-      image: "/images/project1.jpg",
+      image: "./images/photo-light.png",
       icon: FaShoppingCart,
       color: "#FF2D20"
     },
@@ -41,7 +41,7 @@ const Projects = () => {
       duration: "Prévu 2025 - 6 mois",
       client: "Entreprise industrielle spécialisée",
       features: ["Gestion des stocks de ferraille", "Suivi des ressources humaines", "Automatisation financière", "Tableaux de bord personnalisés"],
-      image: "/images/project2.jpg",
+      image: "./images/photo-dark.png",
       icon: FaRecycle,
       color: "#28A745"
     },
@@ -55,7 +55,7 @@ const Projects = () => {
       duration: "Prévu 2025 - Maintenance continue",
       client: "Institution publique régionale",
       features: ["Maintenance continue et sécurisée", "Mise à jour fonctionnelle", "Optimisation des performances", "Support technique régional"],
-      image: "/images/project3.jpg",
+      image: "./images/photo-light.png",
       icon: FaBuilding,
       color: "#007BFF"
     },
@@ -69,7 +69,7 @@ const Projects = () => {
       duration: "Prévu 2025 - 3 mois",
       client: "Entreprise spécialisée en matériels",
       features: ["Édition de factures (proforma, bons de livraison)", "Gestion automatisée des stocks", "Suivi des opérations commerciales", "Rapports financiers automatisés"],
-      image: "/images/project4.jpg",
+      image: "./images/photo-dark.png",
       icon: FaFileInvoice,
       color: "#6F42C1"
     },
@@ -83,7 +83,7 @@ const Projects = () => {
       duration: "Prévu 2025 - 5 mois",
       client: "Initiative communautaire togolaise",
       features: ["Communauté engagée comme force commerciale", "Mise en réseau des initiatives locales", "Visibilité des micro-entreprises", "Croissance solidaire des activités"],
-      image: "/images/project5.jpg",
+      image: "./images/photo-light.png",
       icon: FaUsers,
       color: "#FD7E14"
     },
@@ -97,7 +97,7 @@ const Projects = () => {
       duration: "Prévu 2025 - Projets multiples",
       client: "Divers projets personnels et clients",
       features: ["Navigation fluide et intuitive", "Hiérarchie visuelle maîtrisée", "Cohérence graphique parfaite", "Ergonomie pensée utilisateur"],
-      image: "/images/project6.jpg",
+      image: "./images/photo-dark.png",
       icon: FaPalette,
       color: "#000000"
     }

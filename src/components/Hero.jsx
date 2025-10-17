@@ -130,7 +130,7 @@ const Hero = () => {
               transition={{ duration: 0.3 }}
             >
               <motion.img
-                src={isDark ? "/photo-dark.png" : "/photo-light.png"}
+                src={isDark ? "./photo-dark.png" : "./photo-light.png"}
                 alt="Kouvahe Eloyis Djiedzom Ekoué"
                 className="hero-image"
                 initial={{ opacity: 0, scale: 0.8 }}
