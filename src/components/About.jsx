@@ -82,8 +82,8 @@ const About = () => {
               </p>
               <p>
                 Mon approche combine rigueur technique et sensibilité UI/UX, me permettant de créer 
-                des solutions web robustes et esthétiques. Chaque projet prévu pour 2025 sera une 
-                nouvelle opportunité d'apprendre et de dépasser mes limites.
+                des solutions web robustes et esthétiques. Certains projets sont déjà réalisés, 
+                d'autres sont en cours de développement, témoignant de ma progression constante.
               </p>
               <div className="about-stats">
                 <div className="stat">

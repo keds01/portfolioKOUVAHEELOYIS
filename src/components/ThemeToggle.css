@@ -2,9 +2,9 @@
   position: fixed;
   top: 20px;
   right: 20px;
-  z-index: 1001;
-  background: none;
-  border: none;
+  z-index: 9999;
+  background: var(--primary-white);
+  border: 2px solid var(--border-color);
   cursor: pointer;
   padding: 0;
   border-radius: 25px;
@@ -64,7 +64,7 @@
   .theme-toggle {
     top: 20px;
     right: 80px;
-    z-index: 1000;
+    z-index: 9999;
   }
 }
 
@@ -72,6 +72,7 @@
   .theme-toggle {
     top: 15px;
     right: 70px;
+    z-index: 9999;
   }
 }
 

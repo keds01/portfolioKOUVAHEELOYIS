@@ -6,7 +6,7 @@ import './Hero.css'
 
 const Hero = () => {
   const [currentText, setCurrentText] = useState('')
-  const fullText = "Développeur en formation depuis 2023, préparons ensemble vos projets 2025 avec passion et expertise"
+  const fullText = "🚀 Créateur d'expériences web exceptionnelles | Spécialiste Laravel & UI/UX | Transformons vos idées en réalité digitale"
   const [isTyping, setIsTyping] = useState(true)
   const { isDark } = useTheme()
 

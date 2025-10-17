@@ -55,7 +55,7 @@ const Contact = () => {
     {
       icon: FaPhone,
       title: "Téléphone",
-      info: "+228 98 59 01 9",
+      info: "+228 90 85 90 19",
       color: "#6F42C1"
     }
   ]

@@ -339,15 +339,9 @@
   }
 
   .contact-item:hover {
-    background: var(--primary-black);
-    color: var(--primary-white);
+    background: var(--gray-200);
     transform: translateX(4px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
-
-  .contact-item:hover .contact-text h4,
-  .contact-item:hover .contact-text p {
-    color: var(--primary-white);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 
   .contact-icon {
@@ -362,7 +356,7 @@
   .contact-item:hover .contact-icon {
     background: var(--primary-white);
     color: var(--primary-black);
-    border-color: var(--primary-white);
+    border-color: var(--border-color);
   }
 
   .contact-text h4 {

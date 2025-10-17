@@ -209,9 +209,6 @@ const Footer = () => {
               <p>
                 © {currentYear} Kouvahe Eloyis Djiedzom Ekoué. Tous droits réservés.
               </p>
-              <p className="footer-heart">
-                Fait avec <FaHeart className="heart-icon" /> à Lomé, Togo
-              </p>
             </div>
 
             <motion.button

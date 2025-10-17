@@ -52,7 +52,7 @@ const Projects = () => {
       category: "laravel",
       type: "management",
       technologies: ["Laravel", "PHP", "MySQL", "Sécurité avancée"],
-      duration: "Réalisé 2025 - Maintenance continue",
+      duration: "MISE À JOUR EN COURS",
       client: "Institution publique régionale",
       features: ["Maintenance continue et sécurisée", "Mise à jour fonctionnelle", "Optimisation des performances", "Support technique régional"],
       image: "./images/photo-light.png",
@@ -66,7 +66,7 @@ const Projects = () => {
       category: "laravel",
       type: "management",
       technologies: ["Laravel", "JavaScript", "PDF Generator", "API"],
-      duration: "Réalisé 2025 - 3 mois",
+      duration: "EN COURS DE DÉVELOPPEMENT",
       client: "Entreprise spécialisée en matériels",
       features: ["Édition de factures (proforma, bons de livraison)", "Gestion automatisée des stocks", "Suivi des opérations commerciales", "Rapports financiers automatisés"],
       image: "./images/photo-dark.png",
@@ -80,7 +80,7 @@ const Projects = () => {
       category: "laravel",
       type: "ecommerce",
       technologies: ["Laravel", "Vue.js", "MySQL", "Intégrations sociales"],
-      duration: "Réalisé 2025 - 5 mois",
+      duration: "EN COURS DE DÉVELOPPEMENT",
       client: "Initiative communautaire togolaise",
       features: ["Communauté engagée comme force commerciale", "Mise en réseau des initiatives locales", "Visibilité des micro-entreprises", "Croissance solidaire des activités"],
       image: "./images/photo-light.png",
@@ -251,21 +251,6 @@ const Projects = () => {
             </AnimatePresence>
           </motion.div>
 
-          <motion.div
-            className="projects-cta"
-            initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
-          >
-            <p>Intéressé par mes réalisations ?</p>
-            <motion.button
-              className="btn btn-primary"
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Découvrir plus de projets
-            </motion.button>
-          </motion.div>
         </motion.div>
       </div>
     </section>
