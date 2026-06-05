@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { FaLaravel, FaReact, FaHtml5, FaCss3Alt, FaJs, FaPhp, FaDatabase, FaMobile } from 'react-icons/fa'
+import { FaLaravel, FaReact, FaHtml5, FaCss3Alt, FaJs, FaPhp, FaDatabase, FaMobile, FaUsers, FaBullhorn, FaFacebook, FaInstagram } from 'react-icons/fa'
 import './About.css'
 
 const About = () => {
@@ -15,7 +15,11 @@ const About = () => {
     { name: 'HTML5', icon: FaHtml5, level: 95, color: '#E34F26' },
     { name: 'CSS3', icon: FaCss3Alt, level: 90, color: '#1572B6' },
     { name: 'MySQL', icon: FaDatabase, level: 85, color: '#4479A1' },
-    { name: 'Mobile UI', icon: FaMobile, level: 88, color: '#000000' }
+    { name: 'Mobile UI', icon: FaMobile, level: 88, color: '#000000' },
+    { name: 'Community Management', icon: FaUsers, level: 90, color: '#FF6B6B' },
+    { name: 'Social Media', icon: FaBullhorn, level: 92, color: '#4ECDC4' },
+    { name: 'Facebook', icon: FaFacebook, level: 88, color: '#1877F2' },
+    { name: 'Instagram', icon: FaInstagram, level: 85, color: '#E4405F' }
   ]
 
   const experiences = [
@@ -24,6 +28,24 @@ const About = () => {
       title: "Projets de Développement",
       company: "Portfolio & Clients",
       description: "Développement d'applications web robustes avec Laravel, création d'interfaces utilisateur exceptionnelles. 6 projets prévus pour cette année."
+    },
+    {
+      year: "2020 - Présent",
+      title: "Community Management & Gestion",
+      company: "IEIALEL SARL",
+      description: "Transformation de feuilles et légumes en sauce africaine et différentes farines pour la consommation et l'expédition en Amérique et Europe. Conception d'affiches, étiquettes visuelles pour grandes surfaces, et gestion des réseaux sociaux pour différents événements (forums, foires internationales, etc.)."
+    },
+    {
+      year: "3 ans",
+      title: "Community Management & Gestion",
+      company: "ETS MENU PLUS",
+      description: "Conception d'affiches et gestion des réseaux sociaux pour l'entreprise. Support dans la gestion quotidienne et développement de la visibilité en ligne."
+    },
+    {
+      year: "2024",
+      title: "Développement Web - Site ONG",
+      company: "DIGNITE ENTRAIDE",
+      description: "Création d'un site de présentation pour l'ONG DIGNITE ENTRAIDE (femmes et enfants). Site avec section actualités pour articles, formulaire d'appel à bénévoles, et galerie pour montrer les actions de terrain."
     },
     {
       year: "2024",
